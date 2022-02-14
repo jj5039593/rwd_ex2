@@ -1,0 +1,47 @@
+**flex 기본, grid
+#wrap
+	.header fixed w:100;h:auto
+		.inner-header w:100;h:auto flex
+			.nav w:100;h:auto flex
+				.rightMenu w:100;h:auto flex
+					span.menu 모바일시 block
+					.gnb flex:1
+						ul flex space between
+							li*4 flex:1 
+	.container
+		.inner-container
+			.sections
+				.section.sec1
+					.sec-con w:100vw;h:100vh 
+						video object-fit:cover
+						sec1-txt 400*auto 정중앙
+				.section.sec2 w:100;h:auto flex 
+					.sec-con w최대980;h100 가로 가운데
+						h1.title 100%* lh50, padding 40 0 
+						.img-con relative
+							ul>li*5 img980*550
+							.bcon absolute
+								.items>ul>li*5
+						p.p-con
+						.btn-con flex
+							span.detail
+				.section.sec3 
+					.sec-con w:100vw;h:100vh 
+						video object-fit:cover
+						sec1-txt 400*auto 정중앙
+				.section.sec4 w:100;h:auto flex 
+					.sec-con w최대980;h100 가로 가운데
+						h1.title 100%* lh50, padding 40 0 
+						.img-con relative
+							ul>li*5 img980*550
+							.center-btn absolute 세로 가운데
+								.span.arrow*2
+						.bottom-con 
+							ul flex
+								li*2
+				.section.sec5
+					.sec-con padding 50 
+						.sec5-con  최대 520*auto(200) 
+	.footer
+		.inner-footer
+			.fcon w:100vw*h:100px
