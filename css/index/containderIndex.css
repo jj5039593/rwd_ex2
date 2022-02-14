@@ -82,22 +82,23 @@
     line-height: 50px;
     padding: 40px;
     letter-spacing: 3px;
-
 }
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con{
     position: relative;
     /*높이를 줘야되요*/        
-    height: 550px;
+    height: 29vw;
     width: 100%;
+    
 }
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con>ul>li{
     position: absolute;
-
+    height: inherit;
 }
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con>ul>li img{
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .container .inner-container .index .sections .section.sec2 .sec-con .bcon{
@@ -216,17 +217,19 @@
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con{
     position: relative;
     /*높이를 줘야되요*/        
-    height: 550px;
+    height: 29vw;
     width: 100%;
-
+    transition: all 0.5s;
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul>li{
     position: absolute;
+    height: inherit;
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul>li img{
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con .center-btn{
     position: absolute;
@@ -254,7 +257,7 @@
 
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .bottom-con{
-    padding: 20px;
+
     box-sizing: border-box;
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .bottom-con ul{    
@@ -264,7 +267,7 @@
     text-align: center;
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .bottom-con ul li{    
-    padding: 20px  0 30px;
+    padding:70px 0 0;
     box-sizing: border-box;
     
 }
@@ -273,11 +276,11 @@
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .bottom-con ul li h1{    
     line-height: 30px;
-    padding: 20px;
     box-sizing: border-box;
 }
 .container .inner-container .index .sections .section.sec4 .sec-con .bottom-con ul li p{    
     line-height:50px;
+
 }
 
 /*section05*/
@@ -322,4 +325,15 @@
     box-shadow: 0 0 20px black;
 }
 
+@media only screen and (max-width:640px){
+    .container .inner-container .index .sections .section.sec4 .sec-con .bottom-con ul{    
+        flex-wrap: wrap;
+    }
+    .container .inner-container .index .sections .section.sec4 .sec-con .img-con{
+        height: calc( 100vw - 72px);
+    }
+    .container .inner-container .index .sections .section.sec2 .sec-con .img-con{
+        height: calc( 100vw - 72px);
     
+    }
+}    
